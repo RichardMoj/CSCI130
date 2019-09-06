@@ -1,0 +1,15 @@
+The goal of this first exercise is to give some insight about what is happening on the side of the browser and how the HTML document should be parsed and understood in order to be displayed.
+
+Write the pseudo code of a function that determines if a string (an array of characters) corresponds to an HTML tag
+	 You can differentiate the beginning of an HTML command and the end of an HTML command.
+
+
+Write the pseudo code of a function that creates a tree where each node corresponds to an HTML tag. The function reads a text and create the tree for
+	 Describe the node of the tree via a struct or a class.
+
+
+
+Write the pseudo code of a function that determines if a tree corresponds to an html document with the following constraints:
+	 The root is the HTML tag
+	 The root has 2 children that are HEAD and BODY tags
+	 Inside a tag H1,..H6, there are no other tags.
