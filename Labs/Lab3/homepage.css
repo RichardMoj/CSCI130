@@ -1,0 +1,17 @@
+header{
+	background-color: red;
+}
+body{
+	background-color: blue;
+}
+section, ul{
+	background-color: white;
+	list-style-image: url('/home/richard/Pictures/pawprint_smaller.png');
+}
+img{
+	height: 250px;
+	width: 350px;
+	position: top;
+	padding-left: 1180px;
+	padding-bottom: 0px;
+}
