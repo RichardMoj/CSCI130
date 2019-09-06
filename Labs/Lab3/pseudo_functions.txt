@@ -2,6 +2,13 @@ The goal of this first exercise is to give some insight about what is happening 
 
 Write the pseudo code of a function that determines if a string (an array of characters) corresponds to an HTML tag
 	 You can differentiate the beginning of an HTML command and the end of an HTML command.
+		function X(string s)
+			//Grab the first character in the string
+			//Compare character to '<'
+			//Grab the last character in the string if first was true
+			//Compare character to '>'
+			//Repeat process comparing far left and far right characters
+			//Making sure they follow some order of known html tags
 
 
 Write the pseudo code of a function that creates a tree where each node corresponds to an HTML tag. The function reads a text and create the tree for
