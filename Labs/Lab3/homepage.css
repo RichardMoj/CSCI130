@@ -1,17 +1,30 @@
 header{
 	background-color: red;
+	color: white;
 }
 body{
-	background-color: blue;
+	background-color: navy;
 }
-section, ul{
+section, ul, li{
 	background-color: white;
+}
+ul{
 	list-style-image: url('/home/richard/Pictures/pawprint_smaller.png');
+	/*border: 2px solid green;*/
+	position: relative;
+	width: 300px;
+}
+li{
+	/*border: 2px solid red;*/
+	position: relative;
 }
 img{
-	height: 250px;
-	width: 350px;
-	position: top;
+	height: 200px;
+	width: 200px;
 	padding-left: 1180px;
 	padding-bottom: 0px;
+	position: absolute;
+	top: 75px;
+	left: 200px;
 }
+
