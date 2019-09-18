@@ -1,0 +1,55 @@
+header{
+	background-color: red;
+	color: white;
+}
+body{
+	background-color: navy;
+}
+section, ul, li{
+	background-color: white;
+}
+#section1{
+	width: auto;
+	height: 150px;
+	display: block;
+}
+#section2{
+	width: 700px;
+	height: auto;
+	display: inline-block;
+}
+#section3{
+	width: 700px;
+	height: auto;
+	display: inline-block;
+}
+#section4{
+	width: 700px;
+	height: auto;
+	display: block;
+}
+
+
+
+ul{
+	list-style-image: url('/home/richard/Pictures/pawprint_smaller.png');
+	/*border: 2px solid green;*/
+	position: relative;
+	width: 450px;
+	height: 50px;
+}
+li{
+	/*border: 2px solid red;*/
+	position: relative;
+	display: inline;
+}
+img{
+	height: 100px;
+	width: 100px;
+	padding-left: 1180px;
+	padding-bottom: 0px;
+	position: absolute;
+	top: 32px;
+	left: 270px;
+}
+

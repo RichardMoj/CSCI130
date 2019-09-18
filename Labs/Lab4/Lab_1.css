@@ -1,0 +1,45 @@
+#bigFont{
+	font-size: 12px;
+}
+#smallFont{
+	font-size: 10px;
+}
+a:link{
+	color: red;
+}
+a:visited{
+	color: blue;
+}
+a:hover{
+	color: green;
+}
+a:active{
+	color: blue;
+}
+a:focus{
+	color: yellow;
+}
+
+table{
+	border: 2px solid black;
+}
+
+th{
+	border: 1px solid blue;
+}
+tr{
+	border: 1px solid red;
+}
+td{
+	border: 1px solid green;
+}
+
+th.capital{
+	text-transform: capitalize;
+}
+td:hover{
+	background-color: red;
+}
+tr:hover{
+	background-color: green;
+}

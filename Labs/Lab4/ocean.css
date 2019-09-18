@@ -1,0 +1,173 @@
+html, body, #ocean{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#33FFFF, #33DDFF, #3385FF, navy);
+	position: relative;
+	overflow: hidden;
+	/*linear-gradient(#33FFFF, #33DDFF, #33B8FF, #3386FF)*/
+}
+
+
+@keyframes swim_left_to_right{
+	0% {left: 0%;
+		transform: rotateY(180deg);}
+	10% {left: 30%;
+		transform: rotateY(180deg);}
+	20% {left: 60%;
+		transform: rotateY(180deg);}
+	30%	{left: 90%;
+		transform: rotateY(180deg);}
+	40% {left: 120%;
+		transform: rotateY(180deg);}
+	50% {left: 120%;
+		transform: rotateY(180deg);}
+	60% {left: 80%;
+		transform: rotateY(360deg);}
+	70% {left: 60%;
+		transform: rotateY(360deg);}
+	80% {left: 40%;
+		transform: rotateY(360deg);}
+	90% {left: 20%;
+		transform: rotateY(360deg);}
+	100% {left: 0%;
+		transform: rotateY(360deg);}
+
+
+}
+
+@keyframes swim_right_to_left{
+	0% {left: 120%;
+		transform: rotateY(360deg);}
+	10% {left: 90%;
+		transform: rotateY(360deg);}
+	20% {left: 60%;
+		transform: rotateY(360deg);}
+	30%	{left: 30%;
+		transform: rotateY(360deg);}
+	40% {left: 0%;
+		transform: rotateY(360deg);}
+	50% {left: -20%;
+		transform: rotateY(360deg);}
+	60% {left: 0%;
+		transform: rotateY(180deg);}
+	70% {left: 30%;
+		transform: rotateY(180deg);}
+	80% {left: 60%;
+		transform: rotateY(180deg);}
+	90% {left: 90%;
+		transform: rotateY(180deg);}
+	100% {left: 120%;
+		transform: rotateY(180deg);}
+
+
+}
+
+@keyframes moving_algae2{
+	from {
+		transform: skewX(20deg);
+		z-index: 1;
+	}
+
+	to {
+		transform: skewX(-20deg);
+		z-index: 3;
+	}
+}
+
+
+@keyframes moving_algae{
+	0%	{z-index: 1;}
+	20%	{z-index: 3;}
+	40%	{z-index: 1;}
+	60% {z-index: 3;}
+	80% {z-index: 1;}
+	100% {z-index: 3;}
+}
+
+/*
+@keyframes moving_algae{
+	0%	{z-index: 1;}
+	20%	{z-index: 3;}
+	40%	{z-index: 1;}
+	60% {z-index: 3;}
+	80% {z-index: 1;}
+	100% {z-index: 3;}
+}
+*/
+
+
+div.algae{
+	width: 5%;
+	height: 45%;
+	background-image: none;
+	position: absolute;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	animation-name: moving_algae2;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	/*
+	animation-name: moving_algae;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	*/
+
+
+}
+
+div.fish{
+	width: 15%;
+	height: 25%;
+	position: absolute;
+	z-index: 2;
+}
+
+#algae1{
+	top: 58%;
+}
+
+#algae2{
+	top: 58%;
+	left: 20%;
+}
+
+#algae3{
+	top: 58%;
+	left: 40%;
+}
+#algae4{
+	top: 58%;
+	left: 60%;
+}
+#algae5{
+	top: 58%;
+	left: 80%;
+}
+#algae6{
+	top: 58%;
+	left: 94%;
+}
+
+#fish1{
+	animation-name: swim_left_to_right;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+#fish2{
+	top: 55%;
+	animation-name: swim_right_to_left;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+
+}
+
