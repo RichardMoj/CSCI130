@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert("It is my first example with javascript");
+		//Area and circumference of a circle
+		function circle(radius){
+			area = (radius*radius)*3.14;
+			circumference = 2 * 3.14 * radius;
+			return alert("The area of the circle is: " +  area  + " and the circumference is: " + circumference);
+		}
+
+		//Area of a and perimeter of a rectangle
+		function rectangle (height, width){
+			var area = height * width;
+			var perimeter = height * 2 + width * 2;
+			return alert("The area of the rect is: " + area + " and the perimeter is: " + perimeter);
+		}
+
+		// Area and perimeter of a square
+		function square(size){
+			var area = size* size;
+			var perimeter = size * 4;
+			return alert("The area of the square is: " + area + " and the perimeter is: " + perimeter);
+		}
+
+		var choice = prompt("What shape to work on? Circle, Rectangle or Square?");
+		if (choice === 'circle'){
+			var radius = prompt("What is your radius?");
+			circle(radius);
+		}
+		if (choice === 'rectangle'){
+			var height = prompt("What is the height of the rect?");
+			var width = prompt("What is the width of the rect?");
+			rectangle(height, width);
+		}
+		if (choice === 'square'){
+			var size = prompt("What is length of one of the sides of the square?");
+			square(size);
+		}
+	</script>
+
+</body>
+</html>
